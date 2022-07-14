@@ -37,7 +37,7 @@ body {
 }
 
 /* *************************/
-/* Header LEFT
+/* Contact 
 /* *************************/
 
 .notifiche {
@@ -55,6 +55,12 @@ body {
 
 }
 
+/* *************************/
+/* Chat LEFT
+/* *************************/
+.header-right {
+    background-color: #dadbd4;
+}
 
 /* *************************/
 /* Icone FontAwensome

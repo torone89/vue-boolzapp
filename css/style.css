@@ -69,7 +69,7 @@ body {
 /* *************************/
 .header-right {
     background-color: #dadbd4;
-    height: 85px;
+    height: 70px;
 }
 
 .chat-dinamica {
@@ -106,29 +106,24 @@ body {
     border-radius: 50px;
 }
 
+/* Fix div img header Destro */
+.h-profilo {
+    height: 50px;
+    display: inline-block;
+}
 
-/* *************************/
-/* Main */
-/* *************************/
 
-/* *************************/
-/* Footer */
-/* *************************/
-
-/* CHAT STYLE & JS DYNAMIC CLASS MESSAGES */
+/* MESSAGGI & LOGICA DINAMICA */
 .text-message {
-
-
     border-radius: 15px;
     max-height: 100px;
-
     margin: 10px;
     padding: 10px;
 }
 
 .text-message-inviato {
     background-color: #dcf8c6;
-    border-radius: 15px;
+
 }
 
 .text-message-rivevuto {

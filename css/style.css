@@ -60,6 +60,20 @@ body {
 /* *************************/
 .header-right {
     background-color: #dadbd4;
+    height: 10vh;
+}
+
+.chat-dinamica {
+
+    height: 200px;
+    background-image: url("../img/mine.jpg");
+    border: 1px solid lightgray;
+    overflow-y: scroll;
+
+}
+
+.date-message {
+    font-size: 12px;
 }
 
 /* *************************/
@@ -89,3 +103,22 @@ body {
 /* *************************/
 /* Footer */
 /* *************************/
+
+/* CHAT STYLE & JS DYNAMIC CLASS MESSAGES */
+.text-message {
+
+
+    border-radius: 15px;
+    max-height: 100px;
+    margin: 10px;
+}
+
+.text-message-inviato {
+    background-color: #dcf8c6;
+    border-radius: 15px;
+}
+
+.text-message-rivevuto {
+    background-color: white;
+
+}

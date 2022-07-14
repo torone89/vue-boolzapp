@@ -14,6 +14,7 @@ bg-bottom:#dadbd4/
 body {
     background-image:
         linear-gradient(to bottom, #009687 100px, #dadbd4 100px, #dadbd4 100%);
+    height: 100vh;
 
 }
 

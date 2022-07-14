@@ -24,31 +24,31 @@ body {
     margin: 2rem auto 0;
 }
 
+/* CONTAINER in General-container */
 
-.row {
-    border: 2px dashed yellow;
+.contact {
+    background-color: yellow;
+
 }
 
-.row>[class^='col'] {
-    min-height: 100px;
-    background-color: blanchedalmond;
-    border: 1px gray solid;
-}
-
-.row .row>[class^='col'] {
-    background-color: orange;
-
+.chat {
+    background-color: green;
+    height: 200px;
 }
 
 
 /* *************************/
-/* UTILITIES */
+/* IMMAGINI
 /* *************************/
 
+.img-profilo {
+    width: 50px;
+    border-radius: 50px;
+}
 
 
 /* *************************/
-/* Header
+/* Header LEFT
 /* *************************/
 
 

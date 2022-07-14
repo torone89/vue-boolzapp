@@ -26,19 +26,22 @@ body {
 
 /* CONTAINER in General-container */
 
-.contact {
-    background-color: yellow;
-
-}
-
-.chat {
-    background-color: green;
-    height: 200px;
-}
-
 /* *************************/
 /* Contact 
 /* *************************/
+
+.header-left {
+    background-color: #dadbd4;
+    height: 70px;
+}
+
+.b-blue {
+    background-color: #8edafb;
+}
+
+.notifiche-container {
+    height: 10vh;
+}
 
 .notifiche {
     background-color: white;
@@ -48,10 +51,17 @@ body {
     margin-top: 10px;
 }
 
-.lista-contact {
-    height: 300px;
+.ricerca-container {
+
+    height: 5vh;
+
+}
+
+.container-listacontact {
+    height: 55vh;
     overflow-y: scroll;
     margin-top: 14px;
+    background-color: white;
 
 }
 
@@ -60,16 +70,19 @@ body {
 /* *************************/
 .header-right {
     background-color: #dadbd4;
-    height: 10vh;
+    height: 85px;
 }
 
 .chat-dinamica {
 
-    height: 200px;
     background-image: url("../img/mine.jpg");
     border: 1px solid lightgray;
     overflow-y: scroll;
+    height: 70vh;
+}
 
+.chat-input {
+    height: 10vh;
 }
 
 .date-message {

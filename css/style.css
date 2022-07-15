@@ -121,12 +121,25 @@ body {
     max-width: 300px;
 }
 
-.text-message-inviato {
+.change-message-position {
+    display: flex;
+}
+
+.received .change-message-position {
+    justify-content: end;
+}
+
+.sent .change-message-position {
+    justify-content: start;
+
+}
+
+.sent .text-message {
     background-color: #dcf8c6;
 
 }
 
-.text-message-rivevuto {
+.received .text-message {
     background-color: white;
 
 }

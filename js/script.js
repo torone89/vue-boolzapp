@@ -194,7 +194,7 @@ new Vue({
         },
         // Funzione per Formattare la Data
         printDate() {
-            return dayjs(this.date).format('DD/MM/YY HH:mm:ss')
+            return this.date = dayjs().format('DD/MM/YY HH:mm:ss')
         },
         // Milestone 3
         // Aggiunta di un messaggio: l’utente scrive un testo nella parte bassa e digitando “enter” 
@@ -204,8 +204,8 @@ new Vue({
         // FUNZIONE INVIO MESSAGI
         sendMessage: function () {
             if (this.Inputmessagemodel != '') {
-                this.contacts[this.currentIndex].messages.push({    //pusha il messaggio inserito tramite inputvModel
-                    date: dayjs().format('DD/MM/YY HH:mm:ss'),  // Pusho il nuovo Array di oggetti
+                this.contacts[this.currentIndex].messages.push({    //pusha il messaggio inserito tramite inputvModel(Pusho il nuovo Array di oggetti)
+                    date: this.printDate(),  //Richiamo la funzione prinDate
                     text: (this.Inputmessagemodel),
                     status: 'sent',
                 })

@@ -12,8 +12,8 @@ new Vue({
     el: '#root  ',
     data: {
         user: {
-            name: 'Nome Utente',
-            avatar: '_io'
+            name: 'Fra Tova',
+            avatar: '_2'
         },
         currentIndex: 0,
         contacts: [
@@ -81,7 +81,7 @@ new Vue({
                 ],
             },
             {
-                name: 'Luisa',
+                name: 'Luiso',
                 avatar: '_4',
                 visible: true,
                 messages: [{
@@ -98,7 +98,7 @@ new Vue({
             },
             {
                 name: 'Michele',
-                avatar: '_1',
+                avatar: '_5',
                 visible: true,
                 messages: [{
                     date: '10/01/2020 15:30:55',
@@ -108,18 +108,18 @@ new Vue({
                 {
                     date: '10/01/2020 15:50:00',
                     text: 'Ricordati di dargli da mangiare',
-                    status: 'sent'
+                    status: 'received'
                 },
                 {
                     date: '10/01/2020 16:15:22',
                     text: 'Tutto fatto!',
-                    status: 'received'
+                    status: 'sent'
                 }
                 ],
             },
             {
-                name: 'Fabio',
-                avatar: '_2',
+                name: 'Giuseppina',
+                avatar: '_6',
                 visible: true,
                 messages: [{
                     date: '20/03/2020 16:30:00',
@@ -128,23 +128,23 @@ new Vue({
                 },
                 {
                     date: '20/03/2020 16:30:55',
-                    text: 'Bene grazie! Stasera ci vediamo?',
+                    text: 'Male, ho la febbre',
                     status: 'received'
                 },
                 {
                     date: '20/03/2020 16:35:00',
-                    text: 'Mi piacerebbe ma devo andare a fare la spesa.',
-                    status: 'received'
+                    text: 'Mi dispiace',
+                    status: 'sent'
                 }
                 ],
             },
             {
-                name: 'Samuele',
-                avatar: '_3',
+                name: 'Giuseppe',
+                avatar: '_7',
                 visible: true,
                 messages: [{
                     date: '28/03/2020 10:10:40',
-                    text: 'La Marianna va in campagna',
+                    text: 'Muoviti Carlo',
                     status: 'received'
                 },
                 {
@@ -160,17 +160,17 @@ new Vue({
                 ],
             },
             {
-                name: 'Luisa',
-                avatar: '_4',
+                name: 'Marione',
+                avatar: '_8',
                 visible: true,
                 messages: [{
                     date: '10/01/2020 15:30:55',
-                    text: 'Lo sai che ha aperto una nuova pizzeria?',
+                    text: 'Oggi c"è troppo caldo',
                     status: 'sent'
                 },
                 {
                     date: '10/01/2020 15:50:00',
-                    text: 'Si, ma preferirei andare al cinema',
+                    text: 'Hai ragione, andiamo a fare un bagno',
                     status: 'received'
                 }
                 ],

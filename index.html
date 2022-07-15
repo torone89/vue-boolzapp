@@ -142,11 +142,11 @@ scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due cla
 
                         <!-- CONTACT IMG/DETAILS -->
 
-                        <div class="col-6 py-2 d-flex align-items-center">
-
-                            <img class="img-profilo" src="img/avatar_3.jpg" alt="" />
+                        <div class="col-6 py-2 d-flex align-items-center" v-for="(contact, i) in contacts"
+                            v-if="currentIndex === i">
+                            <img class=" img-profilo" :src="getAvatarImgProfile(contact)" alt="contact-avatar">
                             <div class="h-profilo px-3">
-                                <span class="fw-bold d m-0 p-0">Sn io</span>
+                                <span class="fw-bold d m-0 p-0"> {{ contact.name }}</span>
                                 <p class="text-secondary m-0 p-0">
                                     Ultimo accesso oggi alle
                                 </p>
@@ -166,10 +166,10 @@ scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due cla
 
                     <!-- CHAT DINAMICA -->
 
-                    <div class="chat-dinamica row">
+                    <div class="chat-dinamica">
                         <!-- con v-for stampa per ogni contatto i relativi text messages del currentIndex -->
                         <!-- Cambio Flex e Colore con classi dinamiche a seconda del messaggio ricevuto o inviato -->
-                        <div class="col-12" v-for="message in contacts[currentIndex].messages" :class="message.status">
+                        <div v-for="message in contacts[currentIndex].messages" :class="message.status">
                             <div class="change-message-position" :class="change-message-position">
                                 <div class="text-message">
                                     {{message.text}}

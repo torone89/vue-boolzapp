@@ -28,6 +28,10 @@ li {
     cursor: pointer;
 }
 
+.b-lightgray {
+    background-color: #dadbd4;
+}
+
 /* CONTAINER in General-container */
 
 /* *************************/

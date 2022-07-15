@@ -194,9 +194,29 @@ new Vue({
         },
         // Funzione per Formattare la Data
         printDate() {
-            return dayjs(this.date).format('dddd, DD/MM/YYYY HH:mm:ss')
-        }
-    }
+            return dayjs(this.date).format('DD/MM/YY HH:mm:ss')
+        },
+        // Milestone 3
+        // Aggiunta di un messaggio: l’utente scrive un testo nella parte bassa e digitando “enter” 
+        // il testo viene aggiunto al thread sopra, come messaggio verde
+        // Risposta dall’interlocutore: ad ogni inserimento di un messaggio, 
+        // l’utente riceverà un “ok” come risposta, che apparirà dopo 1 secondo.
+        // FUNZIONE INVIO MESSAGI
+        sendMessage: function () {
+            if (this.Inputmessagemodel != '') {
+                this.contacts[this.currentIndex].messages.push({    //pusha il messaggio inserito tramite inputvModel
+                    date: dayjs().format('DD/MM/YY HH:mm:ss'),  // Pusho il nuovo Array di oggetti
+                    text: (this.Inputmessagemodel),
+                    status: 'sent',
+                })
+                this.Inputmessagemodel = '';
+                // Reset HTML
+            };
+
+        },
+    },
+    computed: {}
+
 });
 
 

@@ -24,6 +24,10 @@ body {
     margin: 2rem auto 0;
 }
 
+li {
+    cursor: pointer;
+}
+
 /* CONTAINER in General-container */
 
 /* *************************/
@@ -77,11 +81,12 @@ body {
     background-image: url("../img/mine.jpg");
     border: 1px solid lightgray;
     overflow-y: scroll;
-    height: 70vh;
+    height: calc(90% - 70px)
 }
 
 .chat-input {
-    height: 10vh;
+    height: calc(10% - 70px);
+    background-color: #dadbd4;
 }
 
 .date-message {
@@ -126,12 +131,12 @@ body {
 }
 
 .received .change-message-position {
-    justify-content: end;
+    justify-content: start;
 }
 
 .sent .change-message-position {
-    justify-content: start;
 
+    justify-content: end;
 }
 
 .sent .text-message {

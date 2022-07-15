@@ -212,7 +212,18 @@ new Vue({
                 this.Inputmessagemodel = '';
                 // Reset HTML
             };
+            this.Inputmessagemodel = this.autoMessage() //Richiamo la funzione Auto
 
+        },
+
+        autoMessage: function () {
+            setTimeout(() => {
+                this.contacts[this.currentIndex].messages.push({
+                    date: this.printDate(),  //Richiamo la funzione prinDate
+                    text: 'ok',
+                    status: 'received',
+                })
+            }, 1000);     // Ritardo di 1 secondo
         },
     },
     computed: {}

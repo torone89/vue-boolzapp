@@ -198,7 +198,7 @@ scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due cla
                                 @keyup.enter="sendMessage" v-model="Inputmessagemodel">
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center b-lightgray">
-                            <a href="#"><i class="fa fa-paper-plane py-3 px-2"></i></a>
+                            <a href="#"><i class="fa fa-paper-plane py-3 px-2" @click="sendMessage"></i></a>
                             <a href="#"><i class="fa fa-microphone py-3 me-4"></i></a>
                         </div>
                         <!-- CHIUSURA CHAT INPUT -->

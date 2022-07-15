@@ -116,9 +116,9 @@ body {
 /* MESSAGGI & LOGICA DINAMICA */
 .text-message {
     border-radius: 15px;
-    max-height: 100px;
-    margin: 10px;
+    margin: 10px 80px;
     padding: 10px;
+    max-width: 300px;
 }
 
 .text-message-inviato {

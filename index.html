@@ -102,7 +102,7 @@ scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due cla
                             <a href="#"><i class="fa fa-search m-2"></i></a>
                             <!--INPUT TEXT  -->
                             <input type="text" class="input-group border-0 my-2 bg-light"
-                                placeholder="Cerca o Inizia una nuova chat">
+                                placeholder="Cerca o Inizia una nuova chat" v-model="search">
                         </div>
                     </div>
                     <!-- CHIUSURA RICERCA -->
@@ -115,9 +115,11 @@ scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due cla
                                 <!-- // Milestone 1 (DAY 1)
                                 // // Replica della grafica con la possibilità di avere messaggi scritti dall’utente (verdi) e
                                 //  dall’interlocutore (bianco) assegnando due classi CSS diverse -->
-
+                                <!-- Milestone 4
+                                Ricerca utenti: scrivendo qualcosa nell’input a sinistra, vengono visualizzati 
+                                solo i contatti il cui nome contiene le lettere inserit -->
                                 <li class="list-group-item border-0" v-for="(contact, index) in contacts"
-                                    @click="setCurrentContact(index)">
+                                    v-show="searchContact(contact)" @click="setCurrentContact(index)">
                                     <img class=" img-profilo" :src="getAvatarImgProfile(contact)" alt="contact-avatar">
                                     {{ contact.name }}
                                 </li>

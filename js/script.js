@@ -16,6 +16,7 @@ new Vue({
             avatar: '_2'
         },
         currentIndex: 0,
+        search: "",
         contacts: [
             {
                 name: 'Michele',
@@ -97,7 +98,7 @@ new Vue({
                 ],
             },
             {
-                name: 'Michele',
+                name: 'Michele Ortolani',
                 avatar: '_5',
                 visible: true,
                 messages: [{
@@ -216,6 +217,7 @@ new Vue({
 
         },
 
+        // FUNZIONE CREAZIONE MESSAGGIO AUTOMATICO (OK)
         autoMessage: function () {
             setTimeout(() => {
                 this.contacts[this.currentIndex].messages.push({
@@ -224,6 +226,20 @@ new Vue({
                     status: 'received',
                 })
             }, 1000);     // Ritardo di 1 secondo
+        },
+
+        //         Milestone 4
+        // Ricerca utenti: scrivendo qualcosa nell’input a sinistra,
+        //  vengono visualizzati solo i contatti il cui nome contiene le lettere inseriti
+        // 
+        //Restituisce true o false se il nome del contatto inserito è uguale e a search nell'input
+        // Metodo startsWith () viene utilizzato per rilevare se la stringa inizia con il prefisso specificato.
+        // FUNZIONE PER LA RICERCA DI UN Nome in Rubrica
+        searchContact: function (contact) {
+            if (this.search == "") {
+                return true;
+            }
+            return contact.name.toLowerCase().startsWith(this.search.toLowerCase());
         },
     },
     computed: {}

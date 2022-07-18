@@ -247,19 +247,28 @@ new Vue({
         //Apertura menù tendina
         openTendina: function (i) {
             this.messageIndex = i;
-
             this.clickTendina = 'true';
         },
 
         //Chiusura menù a tendina (click Messaggio)
-        closeTendina: function () {
+        closeTendina: function (i) {
             this.clickTendina = 'false';
+
         },
 
         // Funzione per cancellare il messaggio
         deleteMessage: function (currentIndex) {
+
             this.contacts[this.currentIndex].messages.splice(currentIndex, 1)
-        }
+            console.log(this.deleteMessage)
+        },
+
+        // funzione per ottenere ora ultimo accesso
+        lastAccess: function (i) {
+            const messages = this.contacts[i].messages;
+            const last = messages.length - 1;
+            return messages[last].date;
+        },
     },
     computed: {}
 

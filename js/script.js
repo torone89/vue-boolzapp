@@ -17,6 +17,8 @@ new Vue({
         },
         currentIndex: 0,
         search: "",
+        clickTendina: '',
+        messageIndex: '',
         contacts: [
             {
                 name: 'Michele',
@@ -242,6 +244,22 @@ new Vue({
             return contact.name.toLowerCase().startsWith(this.search.toLowerCase());
         },
 
+        //Apertura menù tendina
+        openTendina: function (i) {
+            this.messageIndex = i;
+
+            this.clickTendina = 'true';
+        },
+
+        //Chiusura menù a tendina (click Messaggio)
+        closeTendina: function () {
+            this.clickTendina = 'false';
+        },
+
+        // Funzione per cancellare il messaggio
+        deleteMessage: function (currentIndex) {
+            this.contacts[this.currentIndex].messages.splice(currentIndex, 1)
+        }
     },
     computed: {}
 

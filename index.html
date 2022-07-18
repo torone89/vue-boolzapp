@@ -187,14 +187,22 @@ scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due cla
                     <div class="chat-dinamica">
                         <!-- con v-for stampa per ogni contatto i relativi text messages del currentIndex -->
                         <!-- Cambio Flex e Colore con classi dinamiche a seconda del messaggio ricevuto o inviato -->
-                        <div v-for="message in contacts[currentIndex].messages" :class="message.status">
+                        <div v-for="(message, i) in contacts[currentIndex].messages" :class="message.status">
                             <div class="change-message-position" :class="change-message-position">
-                                <div class="text-message">
+                                <div class="text-message ">
                                     {{message.text}}
                                     <div class="date-message text-secondary text-end font-weight-light">
                                         {{message.date}}
 
                                     </div>
+                                    <div>
+                                        <i class="fas fa-chevron-down" @click="openTendina(i)"></i>
+                                    </div>
+                                </div>
+                                <!-- TERNARIO Per verificare se è Aperto o no il mentu -->
+                                <div class="delete" :class="(clickTendina == 'true') ? 'delete-active' : '' "
+                                    @click="deleteMessage(i)" v-if="i == messageIndex">
+                                    <p>Cancella messaggio</p>
                                 </div>
                             </div>
                         </div>
@@ -228,8 +236,6 @@ scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due cla
 
 
             </div>
-
-
 
 
             <!-- Chiusura Contenitore Principale -->

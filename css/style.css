@@ -134,10 +134,14 @@ li {
 
 /* MESSAGGI & LOGICA DINAMICA */
 .text-message {
+
     border-radius: 15px;
     margin: 10px 80px;
     padding: 10px;
     max-width: 300px;
+    position: relative;
+
+
 }
 
 .change-message-position {
@@ -171,5 +175,21 @@ li {
 .text-lastmessage {
     font-size: 13px;
 
+
+}
+
+.delete {
+    display: none;
+}
+
+.delete-active {
+
+
+    background-color: white;
+    padding: 10px;
+    z-index: 1;
+    box-shadow: 1px 1px 4px #919191;
+    display: block;
+    position: absolute;
 
 }

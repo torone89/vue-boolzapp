@@ -27,6 +27,7 @@ body {
 
 li {
     cursor: pointer;
+    height: 100%;
 }
 
 .b-lightgray {
@@ -159,5 +160,16 @@ li {
 
 .received .text-message {
     background-color: white;
+
+}
+
+.text-acces {
+    font-size: 10px;
+
+}
+
+.text-lastmessage {
+    font-size: 13px;
+
 
 }

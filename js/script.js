@@ -241,13 +241,7 @@ new Vue({
             }
             return contact.name.toLowerCase().startsWith(this.search.toLowerCase());
         },
-        // funzione per ottenere l'ora e i minuti dei messaggi
-        getTime: function (date) {
-            let dateTime = new Date(date);
-            let hours = dateTime.getHours(); //getHours()restituisce l'ora (da 0 a 23) di una data.
-            let minutes = dateTime.getMinutes(); //getMinutes()restituisce i minuti (da 0 a 59) di una data.
-            return `${hours}:${minutes}`;
-        },
+
     },
     computed: {}
 
